@@ -33,15 +33,15 @@ public class StopwatchActivity extends AppCompatActivity {
         savedInstanceState.putBoolean("running", running);
     }
 
-    public void onClickStart() {
+    public void onClickStart(View view) {
         running = true;
     }
 
-    public void onClickStop() {
+    public void onClickStop(View view) {
         running = false;
     }
 
-    public void onClickReset() {
+    public void onClickReset(View view) {
         running = false;
         seconds = 0;
     }
